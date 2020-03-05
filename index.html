@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое Задание для ООО "Виста"</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="body-container">
+  <section class="page-container">
+    <div class="page-container__child info">
+      <div class="info__header header">
+        <div class="info__title">Информация о пациенте</div>
+        <span class="info__close-button">×</span>
+      </div>
+      <div class="info__body">
+        <div class="item-info">
+          <div class="item-info__title">ФИО</div>
+          <input type="text" name="fio" class="item-info__value" readonly="readonly">
+        </div>
+        <div class="item-info">
+          <div class="item-info__title">Возраст</div>
+          <input type="text" name="age" class="item-info__value" readonly="readonly">
+        </div>
+        <div class="item-info">
+          <div class="item-info__title">Диагноз</div>
+          <input type="text" name="diagnosis" class="item-info__value" readonly="readonly">
+        </div>
+      </div>
+    </div>
+    <div class="tables__item-dragger"> <div>&#8226;&#8226;&#8226;</div> </div>
+    <div class="page-container__child tables">
+      <div class="tables__header header">
+        <div class="tables__nav">
+          <div class="tables__nav-item tables__nav-item-active" data-value="tables__item_1">ПРИСУТСТВУЮТ<span></span></div>
+          <div class="tables__nav-item" data-value="tables__item_2">ВЫБЫВШИЕ<span></span></div>
+        </div>
+      </div>
+      <div class="tables__body">
+        <template id="errorMessage">
+          <div class="tables__error-message">
+            <p></p>
+          </div>
+        </template>
+        <table class="tables__item tables__item_1 tables__item_active" cellspacing="0">
+          <tr>
+            <th>№ ИБ</th>
+            <th>ФИО</th>
+            <th>Палата</th>
+          </tr>
+        </table>
+        
+        <table class="tables__item tables__item_2" cellspacing="0">
+          <tr>
+            <th>№ ИБ</th>
+            <th>ФИО</th>
+            <th>Причина выбывания</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
